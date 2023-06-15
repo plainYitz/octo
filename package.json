@@ -1,0 +1,17 @@
+{
+  "name": "octopus",
+  "version": "1.0.0",
+  "description": "octopus server",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "ts-node": "^10.9.1"
+  }
+}
