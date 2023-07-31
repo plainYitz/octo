@@ -29,7 +29,7 @@ export function stringifyCookie ( cookie: Cookie ) {
   const expiration = expires ? `Expires=${ expires }` : prefixDefined( "Max-Age=", maxAge )
   
   const strings = [
-    encodeURIComponent(`${ name }=${ value }`),
+    `${ encodeURIComponent( name ) }=${ encodeURIComponent( value ) }`,
     prefixDefined( "Domain=", domain ),
     prefixDefined( "Path=", path ),
     expiration,
